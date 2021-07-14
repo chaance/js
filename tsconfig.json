@@ -1,12 +1,5 @@
 {
 	"extends": "@chance/tsconfig",
-	"compilerOptions": {
-		"lib": [
-			"ES2019",
-			"DOM",
-			"DOM.Iterable"
-		],
-		"downlevelIteration": true
-	},
+	"compilerOptions": {},
 	"include": ["src", "test"]
 }
