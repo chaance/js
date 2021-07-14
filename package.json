@@ -1,0 +1,73 @@
+{
+	"name": "@chance/js",
+	"version": "0.1.0",
+	"author": {
+		"name": "Chance Strickland",
+		"email": "hi@chance.dev",
+		"url": "https://chance.dev"
+	},
+	"description": "Useful JavaScript modules",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chaance/js.git"
+	},
+	"keywords": [
+		"javascript",
+		"typescript",
+		"ts",
+		"js",
+		"utilities"
+	],
+	"bugs": {
+		"url": "https://github.com/chaance/js/issues"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"test": "No tests yet!",
+		"build": "del-cli dist && tsc --project tsconfig.dist.json",
+		"prepare": "npm run build"
+	},
+	"files": [
+		"README.md",
+		"CHANGELOG.md",
+		"dist"
+	],
+	"engines": {
+		"node": ">=12"
+	},
+	"devDependencies": {
+		"@babel/eslint-parser": "^7.14.7",
+		"@chance/tsconfig": "^2.0.0",
+		"@chancedigital/eslint-config": "^9.0.0",
+		"@types/react": "^17.0.14",
+		"@typescript-eslint/eslint-plugin": "^4.28.3",
+		"@typescript-eslint/parser": "^4.28.3",
+		"del-cli": "^4.0.0",
+		"eslint": "^7.30.0",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-node": "^11.1.0",
+		"react": "^17.0.2",
+		"ts-node": "^10.1.0",
+		"typescript": "^4.3.5"
+	},
+	"type": "module",
+	"main": "./dist/index.js",
+	"exports": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 2
+	},
+	"eslintConfig": {
+		"extends": [
+			"@chancedigital/eslint-config/node",
+			"@chancedigital/eslint-config/typescript"
+		],
+		"rules": {
+			"node/no-missing-import": 0
+		}
+	}
+}
