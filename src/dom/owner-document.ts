@@ -1,11 +1,4 @@
-import { ExecutionEnvironment } from "../core/execution-environment";
-import { CANT_USE_DOM } from "./constants";
-
-function assertCanUseDOM() {
-	if (!ExecutionEnvironment.canUseDOM) {
-		throw Error(CANT_USE_DOM);
-	}
-}
+import { assertCanUseDOM } from "../core/execution-environment";
 
 /**
  * Get an element's owner document. Useful when components are used in iframes
